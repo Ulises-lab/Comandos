@@ -1,2 +1,24 @@
 # Para llave
 eval '$(ssh-agent -s)' && ssh-add ssh/idrsa
+
+# Busqueda de un archivo en la computadora
+find / -name archivo_a_buscar
+
+# Busqueda de un texto en los archivos del directorio donde estemos actualmente
+grep -r texto_sin_espacios
+grep texto_sin_espacios *.txt
+                          |
+                          '--> Busca el texto en los archivos con extencion .txt
+
+# Crear directorios de manera recursiva 
+mkdir -p /directorio/subdirectorio/   
+
+# Ver informacion completa de tu certificado de dominio
+openssl x509 -in numbre_de_tu_certificado_de_dominio -noout -text
+
+# Ver fecha de expiracion de tu certificado de dominio 
+openssl x509 -in numbre_de_tu_certificado_de_dominio -noout -text | grep "Not After"
+
+# Ver dns de tu certificado de dominio
+openssl x509 -in numbre_de_tu_certificado_de_dominio -noout -text | grep "DNS"
+
