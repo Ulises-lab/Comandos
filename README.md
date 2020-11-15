@@ -1,2 +1,1 @@
-# Comandos
-comandos para fedora
+# Comandos en linux
